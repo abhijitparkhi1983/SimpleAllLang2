@@ -7,7 +7,7 @@ sources:
     - '.js'
     - '.ts'
 
-languages: 'CPP'
+languages: 'CPP, JAVASCRIPT'
 
 modules:
   - name: pmd
