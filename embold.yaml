@@ -7,11 +7,11 @@ sources:
     - '.js'
     - '.ts'
 
-languages: 'CPP, JAVASCRIPT'
+languages: 'CPP, JAVA'
 
 modules:
   - name: pmd
-    enabled: true
+    enabled: false
     config:
       - name: ruleSets
         value: 'rulesets/java/strictexception.xml,rulesets/java/basic.xml,rulesets/java/design.xml,category/java/security.xml'
