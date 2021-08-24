@@ -9,7 +9,7 @@ sources:
 
 languages: 'JAVA'
 
-includePaths: 'as"
+includePaths: 'as'
 
 modules:
   - name: pmd
