@@ -1,51 +1,52 @@
 version: 1
-# Sources mention which Files/Dirs to be taken for Analysis
+
 sources:
   #Files or Directories to be Excluded are mentioned in exclusions
   exclusions:
+    - 'test'
+    - 'generated'
+    - 'mock'
+    - 'thirdparty'
+    - 'third-party'
+    - '3rd-party'
+    - '3rdparty'
+    - 'external'
+    - 'build'
+    - 'node_modules'
+    - 'assets'
+    - 'gulp'
+    - 'grunt'
+    - 'library'
     - '.git'
-    - '.js'
-    - '.ts'
+    
+# Specify the languages you would like to Scan. Default is all Detected
+#languages: 'JAVA,CPP'
 
-languages: 'JAVA'
 
+# Define modules one would like to run or disable. This is enough for Basic Users
+# Get List of Modules (Which are Default Enabled/Disabled) at the documentation link above
 modules:
   - name: pmd
-    enabled: false
-    config:
-      - name: ruleSets
-        value: 'rulesets/java/strictexception.xml,rulesets/java/basic.xml,rulesets/java/design.xml,category/java/security.xml'
-      - name: javaVersion
-        value: '1.8'
-  - name: spotbugs
     enabled: true
-    config:
-      - name: reportDir
-        value: ${basedir}/target
-  - name: junit
-    enabled: true
-    config:
-      - name: reportDir
-        value: ${basedir}/target
   - name: gamma_cxx
     enabled: true
-    rules:
-      - name: accessForwarded
-        enabled: true
-      - name: accessMoved
-        enabled: true
-      - name: arithOperationsOnVoidPointer
-        enabled: false
-  - name: relevance
+  - name: jshint
     enabled: true
-    config:
-      - name: mode
-        value: git
-      - name: jiraUrl
-        value: 'https://acellere.atlassian.net/'
-      - name: jiraProjectKey
-        value: COR
-      - name: jiraUsername
-        value: ketki.thosar@acellere.com
-      - name: jiraPassword
-        value: XXXXXXX
+  - name: spotbugs
+    enabled: true
+  - name: klocwork
+    enabled: true
+  - name: cpplint
+    enabled: true
+  - name: embold_sec
+    enabled: true
+  - name: brakeman
+    enabled: true
+  - name: brakeman
+    enabled: true
+  - name: htmlhint
+    enabled: true
+  - name: clippy
+    enabled: true
+  - name: gamma_generic
+    enabled: true
