@@ -50,3 +50,5 @@ modules:
     enabled: true
   - name: gamma_generic
     enabled: true
+  - name: sonar
+    enabled: true
