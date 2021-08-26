@@ -20,9 +20,8 @@ sources:
     - 'library'
     - '.git'
 
-incl: 't'
 
-languages: 'JAVA,CPP'
+languages: 'JAVA'
 
 modules:
   - name: pmd
