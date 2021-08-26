@@ -5,7 +5,6 @@ sources:
   exclusions:
     - '.git'
     
-includePaths: 't'
 
 languages: 'JAVA'
 
