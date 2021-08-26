@@ -4,6 +4,8 @@ sources:
   #Files or Directories to be Excluded are mentioned in exclusions
   exclusions:
     - '.git'
+    - '.js'
+    - '.ts'
     
 
 languages: 'JAVA,CPP'
