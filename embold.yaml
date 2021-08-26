@@ -20,6 +20,7 @@ sources:
     - 'library'
     - '.git'
 
+incl: 't'
 
 languages: 'JAVA,CPP'
 
