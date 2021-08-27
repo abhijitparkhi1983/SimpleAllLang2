@@ -20,7 +20,6 @@ sources:
     - 'library'
     - '.git'
 
-includePaths: 'a'
 
 # languages: 'JAVA, CPP'
 
